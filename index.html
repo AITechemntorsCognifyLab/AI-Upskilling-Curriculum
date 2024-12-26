@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>AI TECHMENTORS COGNIFY LAB Curriculum</title>
+  <style>
+    .fade-in {
+      animation: fadeIn 0.5s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-100">
+  <div class="flex flex-col mx-auto max-w-6xl bg-white shadow-lg">
+    <!-- Header -->
+    <header class="flex justify-between items-center bg-blue-700 text-white p-4">
+      <div class="flex items-center">
+        <img src="https://source.unsplash.com/100x100/?technology,ai" alt="AI Techmentors Logo" class="h-8 w-8 mr-2">
+        <span class="text-lg font-bold">AI TECHMENTORS COGNIFY LAB</span>
+      </div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="https://aitechmentorscognifylab.vercel.app/" class="hover:text-blue-300">Home</a></li>
+          <li><a href="#" class="hover:text-blue-300">Curriculum</a></li>
+          <li><a href="https://aitechmentorscognifylab.vercel.app/contact" class="hover:text-blue-300">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow p-6">
+      <h1 class="text-3xl font-bold text-center mb-6">🌟 4-Weekend AI Upskilling Curriculum (10 Hours Total) 🌟</h1>
+      
+      <img src="https://source.unsplash.com/1200x600/?technology,ai,education" alt="Curriculum Banner" class="w-full rounded-lg mb-6 shadow-md">
+      
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">🧠 Core Objectives:</h2>
+        <ul class="list-disc pl-6">
+          <li>Build foundational knowledge of AI, NLP, Computer Vision, and Generative AI</li>
+          <li>Learn and implement Azure AI Services and automation tools</li>
+          <li>Work with advanced AI tools like OpenAI APIs, GitHub Copilot, and DALL-E</li>
+          <li>Capstone project integrating AI concepts into real-world applications</li>
+        </ul>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl font-semibold mb-4">🔍 Select a Weekend to Explore More:</h2>
+
+        <!-- Weekend 1 -->
+        <div class="mb-6">
+          <button onclick="toggleVisibility('weekend1', 'symbol1')" class="flex justify-between items-center bg-blue-500 text-white px-4 py-2 w-full rounded hover:bg-blue-600 focus:outline-none transition">
+            <span>Weekend 1: Introduction to AI, NLP, and Computer Vision (Jan 4th 2025, 4:00-6:30 PM)</span>
+            <span id="symbol1">➕</span>
+          </button>
+          <div id="weekend1" class="hidden mt-4">
+            <ul class="list-disc pl-6 fade-in">
+              <li>
+                <strong>Session 1: AI and NLP Basics</strong>
+                <ul class="list-disc pl-6 mt-1">
+                  <li>Overview of AI and its applications in different industries</li>
+                  <li>Introduction to Natural Language Processing (NLP) and key concepts</li>
+                  <li>Hands-on: Text preprocessing and sentiment analysis using Python</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Session 2: Introduction to Computer Vision</strong>
+                <ul class="list-disc pl-6 mt-1">
+                  <li>Fundamentals of computer vision: Image recognition and classification</li>
+                  <li>Understanding convolutional neural networks (CNNs)</li>
+                  <li>Hands-on: Building an image classification model using TensorFlow/Keras</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Weekend 2 -->
+        <div class="mb-6">
+          <button onclick="toggleVisibility('weekend2', 'symbol2')" class="flex justify-between items-center bg-blue-500 text-white px-4 py-2 w-full rounded hover:bg-blue-600 focus:outline-none transition">
+            <span>Weekend 2: Generative AI and Azure AI Services (Jan 11th 2025, 4:00-6:30 PM)</span>
+            <span id="symbol2">➕</span>
+          </button>
+          <div id="weekend2" class="hidden mt-4">
+            <ul class="list-disc pl-6 fade-in">
+              <li>
+                <strong>Session 1: Generative AI Basics</strong>
+                <ul class="list-disc pl-6 mt-1">
+                  <li>Exploring GPT models, GANs, and VAEs for text and image generation</li>
+                  <li>Hands-on: Using OpenAI GPT-based APIs for content generation</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Session 2: Azure AI Services</strong>
+                <ul class="list-disc pl-6 mt-1">
+                  <li>Overview of Azure Cognitive Services: Vision, Language, and Decision</li>
+                  <li>Hands-on: Implementing Azure Language Understanding (LUIS) and Form Recognizer</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Weekend 3 -->
+        <div class="mb-6">
+          <button onclick="toggleVisibility('weekend3', 'symbol3')" class="flex justify-between items-center bg-blue-500 text-white px-4 py-2 w-full rounded hover:bg-blue-600 focus:outline-none transition">
+            <span>Weekend 3: AI Tools for Automation and GitHub Copilot (Jan 25th 2025, 4:00-6:30 PM)</span>
+            <span id="symbol3">➕</span>
+          </button>
+          <div id="weekend3" class="hidden mt-4">
+            <ul class="list-disc pl-6 fade-in">
+              <li>
+                <strong>Session 1: Automating Workflows with AI</strong>
+                <ul class="list-disc pl-6 mt-1">
+                  <li>Overview of ChatGPT, Zapier, and Power Automate</li>
+                  <li>Hands-on: Automating content creation and workflows</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Session 2: GitHub Copilot and AI-Assisted Development</strong>
+                <ul class="list-disc pl-6 mt-1">
+                  <li>Understanding GitHub Copilot for code generation</li>
+                  <li>Hands-on: AI-driven coding for real-world problems</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Weekend 4 -->
+        <div class="mb-6">
+          <button onclick="toggleVisibility('weekend4', 'symbol4')" class="flex justify-between items-center bg-blue-500 text-white px-4 py-2 w-full rounded hover:bg-blue-600 focus:outline-none transition">
+            <span>Weekend 4: AI Integration, DALL-E, and Capstone Project (Feb 1st 2025, 4:00-6:30 PM)</span>
+            <span id="symbol4">➕</span>
+          </button>
+          <div id="weekend4" class="hidden mt-4">
+            <ul class="list-disc pl-6 fade-in">
+              <li>
+                <strong>Session 1: DALL-E and Advanced Generative AI</strong>
+                <ul class="list-disc pl-6 mt-1">
+                  <li>Using DALL-E for image generation and creative applications</li>
+                  <li>Exploring real-world use cases of generative AI</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Session 2: Capstone Project</strong>
+                <ul class="list-disc pl-6 mt-1">
+                  <li>Integrating NLP, Generative AI, and automation tools</li>
+                  <li>Designing and presenting a real-world AI solution</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center">
+      <p>&copy; 2024 AI TECHMENTORS COGNIFY LAB. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleVisibility(id, symbolId) {
+      const section = document.getElementById(id);
+      const symbol = document.getElementById(symbolId);
+      if (section.classList.contains('hidden')) {
+        section.classList.remove('hidden');
+        section.classList.add('fade-in');
+        symbol.textContent = '➖';
+      } else {
+        section.classList.add('hidden');
+        section.classList.remove('fade-in');
+        symbol.textContent = '➕';
+      }
+    }
+  </script>
+</body>
+</html>
